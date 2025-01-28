@@ -24,8 +24,13 @@ public class MedicalPersonnel {
 
 
     //Abstract methods
-    public abstract void performDuties();
-    public abstract  String getSpecialization();
+    public void performDuties() {
+
+    }
+
+    public String getSpecialization(){
+        return null;
+    }
 
     //Concrete Methods
     public  void displayDetails() {
