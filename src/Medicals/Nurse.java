@@ -21,8 +21,12 @@ public class Nurse extends MedicalPersonnel{
 
     //Methods for implementing getSpecialization
     @Override
-    public String  getSpecialization(){
+    public String getSpecialization(){
         return department;
     }
 
+    @Override
+    public String toString(){
+        return "Specialization" + getSpecialization();
+    }
 }

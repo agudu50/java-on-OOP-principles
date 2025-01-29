@@ -4,6 +4,10 @@ package Medicals;
 public class Doctor extends MedicalPersonnel{
     private String specialization;
 
+    @Override
+    public String getSpecialization() {
+        return specialization;
+    }
 
     //adding Constructor
     public Doctor(String name, String id, String specialization) {
@@ -19,9 +23,10 @@ public class Doctor extends MedicalPersonnel{
 
     }
 
-    //Implementing performDuties method
     @Override
-    public String getSpecialization() {
-        return specialization;
+    public String toString(){
+        return "Specialization" + getSpecialization();
     }
+
+
 }

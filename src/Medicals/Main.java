@@ -1,8 +1,6 @@
 package Medicals;
 
 
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         //Creating an array of MedicalPersonnel
@@ -19,8 +17,9 @@ public class Main {
         for(MedicalPersonnel person: personnel){
             person.displayDetails();
             person.performDuties();
-            System.out.println("Specialization/Department: " + person.getSpecialization());
-            System.out.println(); //Adding space for readability
+
+            System.out.println(person.getSpecialization());
+            System.out.println();//Adding space for readability
         }
     }
 

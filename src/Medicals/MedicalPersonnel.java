@@ -1,7 +1,7 @@
 package Medicals;
 
 //Abstract class for medical Personnel
-public class MedicalPersonnel {
+public abstract class MedicalPersonnel {
     private String name;
     private String id;
 
@@ -24,17 +24,15 @@ public class MedicalPersonnel {
 
 
     //Abstract methods
-    public void performDuties() {
-
-    }
-
-    public String getSpecialization(){
-        return null;
-    }
-
+    public abstract void performDuties();
+    public abstract String getSpecialization();
     //Concrete Methods
     public  void displayDetails() {
         System.out.println("Name: " + name + "ID: " + id);
     }
 
+    @Override
+    public String toString(){
+        return "Specialization" + getSpecialization();
+    }
 }
